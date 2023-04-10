@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Roboto+Slab:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    color: rgb(0, 55, 92);
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(91, 166, 216);
+    width: 100%;
+    height: 65px;
+    opacity: 0.9;
+    z-index: 100;
+}
+
+.header a{
+    padding: 0 20px;
+}
+
+.navbar a{
+    padding: 0 20px;
+    text-decoration: none; 
+    font-size: 1rem;
+    color: rgb(0, 55, 92);
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main{
+    margin: auto;
+}
+
+.sec1{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.intro{
+    width: 60%;
+    padding: 40px;
+    padding-left: 0;
+}
+
+.intro h1{
+    padding: 0.3rem 0;
+    margin: 0;
+    font-size: 2.4rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    color: rgb(0, 55, 92)
+}
+
+.intro h3{
+    padding: 0.3rem 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container {
+    overflow: hidden; 
+}
+.container .text {
+    position: relative;
+    color: rgb(91, 166, 216);
+    font-size: 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+.container .text.first-text {
+    color: #000000;
+}
+
+.container .sec-text{
+    font-weight: 600;
+}
+.text.sec-text:before{
+    content: ""; 
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    height: 100%; 
+    width: 100%;   
+    background-color: white;
+    border-left: 2px solid rgb(91, 166, 216);
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%
+    }
+}
+
+.intro span{
+    font-family: 'Rajdhani', sans-serif;
+    color:rgb(0, 118, 197)
+}
+
+.intro p{
+    padding: 0.3rem 0;
+    margin: 0;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.dbtn{
+    border-radius: 30px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(91, 166, 216);
+}
+
+.dbtn:hover{
+    color:rgb(91, 166, 216);
+    background-color: rgb(0, 103, 172);
+}
+
+.mypic img{
+    width: 300px;
+    border: 2px solid rgb(91, 166, 216);
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.contact img{
+    width: 40px;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.about{
+    width: 70%;
+    padding-top: 100px;
+}
+
+.about p{
+    padding: 0.3rem 0;
+    margin: 0;
+    font-size: 1rem;
+    text-align: justify;
+    padding-right: 50px;
+}
+
+.about h1{
+    padding: 0.3rem 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+}
+
+.about span{
+    display: block;
+    margin: 20px 0;
+}
+
+.sec3{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.skills{
+    padding-top: 160px;
+}
+
+.sec3 h1{
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+}
+
+.sec3 div div{
+    height: 30px;
+    background-color: rgb(120, 199, 252);
+    border-radius: 20px;
+}
+
+.full{
+    height: 50px;
+    margin: 30px 0;
+}
+#python{
+    display: flex;
+    align-items: center;
+}
+
+#python div{
+    height: 30px;
+    background-color: rgb(0, 103, 172);
+    width: 75%;
+}
+
+#python span{
+    align-items: center;
+}
+
+#java{
+    display: flex;
+    align-items: center;
+}
+
+#java div{
+    height: 30px;
+    background-color: rgb(0, 103, 172);
+    width: 65%;
+}
+
+#java span{
+    align-items: center;
+}
+
+#html{
+    display: flex;
+    align-items: center;
+}
+
+#html div{
+    height: 30px;
+    background-color: rgb(0, 103, 172);
+    width: 80%;
+}
+
+#html span{
+    align-items: center;
+}
+
+#css{
+    display: flex;
+    align-items: center;
+}
+
+#css div{
+    height: 30px;
+    background-color: rgb(0, 103, 172);
+    width: 60%;
+}
+
+#css span{
+    align-items: center;
+}
+
+#js{
+    display: flex;
+    align-items: center;
+}
+
+#js div{
+    height: 30px;
+    background-color: rgb(0, 103, 172);
+    width: 55%;
+}
+
+#js span{
+    align-items: center;
+}
+
+
+.sec4{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.sec4 span{
+    font-size: 0.7rem;
+}
+
+.sec4 input{
+    margin-bottom: 30px;
+    height: 30px;
+}
+
+.sec4 h1{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    padding-top: 100px;
+}
+
+.sec4 textarea{
+    margin-bottom: 40px;
+    height: 100px;
+}
+
+.btn{
+    border-radius: 30px;
+    padding: 2px 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(91, 166, 216);
+    font-size: 0.8rem;
+}
+
+.btn:hover{
+    color:rgb(91, 166, 216);
+    background-color: rgb(0, 103, 172);
+}
+
+.up a{
+    position:fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgb(91, 166, 216);
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+}
+
+.up img{
+    width: 50px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    background-color: rgb(91, 166, 216);
+}
+
+footer h4{
+    font-size: 0.8rem;
+}
